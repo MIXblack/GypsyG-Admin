@@ -46,7 +46,7 @@
                                 <form class="login-signup-form" action="login.php" name="login_page" method="post">
                                     <div class="form-group">
                                         <label class="pb-1">
-                                            Username
+                                            Username or Email
                                             <span class="text-danger">*</span>
                                         </label>
 
@@ -55,7 +55,7 @@
                                                 <span class="ti-user color-primary"></span>
                                             </div>
 
-                                            <input type="text" name="username" class="form-control" placeholder="Enter your username" value="<?php if(isset($username)) echo $username; ?>">
+                                            <input type="text" name="username" class="form-control" placeholder="Enter your username or email" value="<?php if(isset($username)) echo $username; ?>">
 										</div>
 										
 										<small class="text-danger"><?php echo $username_error;?></small>

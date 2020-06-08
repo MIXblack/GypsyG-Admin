@@ -1,14 +1,14 @@
 <?php 
 
-    error_reporting(0);
+    // error_reporting(0);
 
     $page = 'forgot-password.php';
     $title = 'Forgot Password | GypsyG';
     $description = '';
 	$keywords = '';
 
-	// Include Login Parse File
-	include('partials/parseLogin.php'); 
+	// Include parseForgotPassword File
+	include('partials/parseForgotPassword.php'); 
 
     // Include Header File
     include('include/home-header.php'); 
@@ -43,7 +43,9 @@
                                 </div>
 
                                 <!--login form-->
-                                <form class="login-signup-form" action="forgot-password.php" name="login_page" method="post">
+                                <form class="login-signup-form" action="forgot-password.php" name="password_reset_page" method="post">
+
+                                    <!-- Email id -->
                                     <div class="form-group">
                                         <label class="pb-1">
                                             Email Id
@@ -60,11 +62,12 @@
 										
 										<small class="text-danger"><?php echo $email_error;?></small>
                                     </div>
-
+                                    
+                                    <!-- Token -->
                                     <input type="hidden" name="token" value="<?php if(function_exists('_token')) echo _token(); ?>">
 
                                     <!-- Submit -->
-                                    <button type="submit" name="login_btn" class="btn btn-lg btn-block solid-btn border-radius mt-4 mb-3">
+                                    <button type="submit" name="reset_password_btn" class="btn btn-lg btn-block solid-btn border-radius mt-4 mb-3">
                                         Reset Password
                                     </button>
 

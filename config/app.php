@@ -21,7 +21,7 @@
             'username' => 'gypsyg.team@gmail.com',
             'password' => 'narayanshaw@',
             'from' => 'no-reply@gypsyg.team@gmail.com',
-            'sender_name' => 'Clearance Portal | AAI'
+            'sender_name' => 'GypsyG | Powered by MIXblack'
 
         ]
 

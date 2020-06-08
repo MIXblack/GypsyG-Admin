@@ -33,11 +33,11 @@
 
             // ============ FORM VALIDATION =========================
 				if(empty($username)) {
-					$username_error = "Username is required";
+					$username_error = "Please enter username or email";
 				}
 
 				else if(empty($password)) {
-					$password_error = "Password is required";
+					$password_error = "Please enter valid password";
                 }
                 
              // ============ FORM VALIDATION =========================
@@ -45,11 +45,11 @@
             else if (empty($msg)) {
 
                 // Check if user exist in the database
-                $sql = "SELECT * FROM admins WHERE username = :username";
+                $sql = "SELECT * FROM admins WHERE username = :username OR email = :email";
 
                 $stmt = $db->prepare($sql);
 
-                $stmt->execute(array(':username' => $username));
+                $stmt->execute(array(':username' => $username, ':email' => $username));
 
                 if ($row = $stmt->fetch()) {
 

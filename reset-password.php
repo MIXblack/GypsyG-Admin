@@ -1,14 +1,14 @@
 <?php 
 
-    error_reporting(0);
+    // error_reporting(0);
 
     $page = 'reset-password.php';
     $title = 'Reset Password | GypsyG';
     $description = '';
 	$keywords = '';
 
-	// Include Login Parse File
-	include('partials/parseLogin.php'); 
+	// Include parseForgotPassword File
+	include('partials/parseForgotPassword.php'); 
 
     // Include Header File
     include('include/home-header.php'); 
@@ -43,7 +43,43 @@
                                 </div>
 
                                 <!--login form-->
-                                <form class="login-signup-form" action="reset-password.php" name="login_page" method="post">
+                                <form class="login-signup-form" action="reset-password.php" name="update_password_page" method="post">
+
+                                    <!-- Email id -->
+                                    <div class="form-group">
+                                        <label class="pb-1">
+                                            Email Id
+                                            <span class="text-danger">*</span>
+                                        </label>
+
+                                        <div class="input-group input-group-merge">
+                                            <div class="input-icon">
+                                                <span class="ti-email color-primary"></span>
+                                            </div>
+
+                                            <input type="text" name="email" class="form-control" placeholder="Enter your email" value="<?php if(isset($email)) echo $email; ?>">
+										</div>
+										
+										<small class="text-danger"><?php echo $email_error;?></small>
+                                    </div>
+
+                                     <!-- Token -->
+                                     <div class="form-group">
+                                        <label class="pb-1">
+                                            Token
+                                            <span class="text-danger">*</span>
+                                        </label>
+
+                                        <div class="input-group input-group-merge">
+                                            <div class="input-icon">
+                                                <span class="ti-email color-primary"></span>
+                                            </div>
+
+                                            <input type="text" name="reset_token" class="form-control" placeholder="Enter your token" value="<?php if(isset($reset_token)) echo $reset_token; ?>">
+										</div>
+										
+										<small class="text-danger"><?php echo $token_error; ?></small>
+                                    </div>
 
                                     <!-- New Password -->
                                     <div class="form-group">
@@ -61,7 +97,7 @@
                                                 <span class="ti-lock color-primary"></span>
                                             </div>
 
-                                            <input type="password" name="password" class="form-control" placeholder="Enter your password">
+                                            <input type="password" name="new_password" class="form-control" placeholder="Enter your password">
 										</div>
 										
 										<small class="text-danger"><?php echo $password_error;?></small>
@@ -92,7 +128,7 @@
                                     <input type="hidden" name="token" value="<?php if(function_exists('_token')) echo _token(); ?>">
 
                                     <!-- Submit -->
-                                    <button type="submit" name="reset_password_btn" class="btn btn-lg btn-block solid-btn border-radius mt-4 mb-3">
+                                    <button type="submit" name="update_password_btn" class="btn btn-lg btn-block solid-btn border-radius mt-4 mb-3">
                                         Update Password
                                     </button>
 

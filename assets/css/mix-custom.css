@@ -1,0 +1,310 @@
+:root {
+    --main-bg-color: #3c4ba7;
+    --main-bg-hover: #5a6ac4;
+}
+
+/* Login Page */
+.mix-logo {
+    margin-bottom: 30px !important;
+}
+
+.mix-login-brand-img {
+    width: 110px;
+    height: 35px;
+    vertical-align: middle;
+    margin-top: 5px;
+}
+
+.header-brand-img{
+    width: 100px !important;
+    height: 30px !important;
+}
+
+input:focus {
+    border-color: var(--main-bg-color) !important;
+}
+
+.mix-login-bg {
+    background-color: #daddf1 !important;
+}
+
+.mix-card-bg {
+    background-color: #fff;
+    border: 1px solid #d9d9d9;
+}
+
+.mix-card-bg .card-body input {
+    border: 1px solid #d9d9d9;
+}
+
+
+/* Content */
+.mix-box {
+    /* width: 420px !important; */
+    margin: 20px auto 20px !important;
+}
+
+.mix-box-2 {
+    /* width: 420px !important; */
+    margin: 20px !important;
+    /* padding: 20px !important; */
+}
+
+.mix-vehicle-content {
+    width: 900px !important;
+    margin: auto !important;
+    padding: 20px;
+}
+
+.mix-vehicle-form {
+    width: 1000px !important;
+    margin: auto !important;
+    padding: 20px;
+}
+
+.mix-assets-pass {
+    width: 1000px !important;
+    margin: auto !important;
+    /* margin-right: -20px !important; */
+}
+
+.mix-vehicle-list {
+    width: 1100px !important;
+    margin: auto !important;
+    padding: 20px;
+}
+
+/* .form-group input: {
+    border: 1px solid #c4c4c4 !important;
+} */
+
+.english {
+    font-family:Arial;
+}
+
+.hindi {
+    font-family:Arial Black;
+}
+
+.logo-header {
+    width: 150px;
+    height: 80px;
+}
+
+.logo-header-p {
+    margin-top: -12px;
+}
+
+.mix-5 {
+    margin-top: 30px !important;
+}
+
+.mix-4 {
+    margin-top: 80px !important;
+}
+
+.mix-6 {
+    margin-top: 130px !important;
+}
+
+.mix-horizontal-line {
+    margin-top: 15px !important;
+}
+
+.mix-horizontal-vehicle {
+    margin-top: -30px !important;
+}
+
+.mix-serial-number {
+    margin-left: -230px !important;
+    margin-top: -10px !important;
+}
+
+.mix-assets-serial-number {
+    margin-left: -230px !important;
+    margin-top: -10px !important;
+}
+
+.mix-input-date {
+    margin-left: -20px !important;
+    margin-top: -10px !important;
+}
+
+.input-mix-control {
+    margin-left: -90px !important;
+    margin-top: -15px !important;
+}
+
+.mix_date_input {
+    margin-left: 12px !important;
+}
+
+.mix_date_input_1 {
+    margin-left: -8px !important;
+    margin-top: -10px !important;
+}
+
+.mix_date_input_2 {
+    margin-left: -8px !important;
+    /* margin-top: -10px !important; */
+}
+
+.mix_date_input_3 {
+    margin-left: -5px !important;
+    margin-top: -10px !important;
+}
+
+.mix_date_input_4 {
+    margin-left: -8px !important;
+    /* margin-top: -10px !important; */
+}
+
+.mix_date_input_5 {
+    /* margin-left: 10px !important; */
+    margin-top: -6px !important;
+}
+
+.mix_input_passenger {
+    margin-left: -20px !important;
+    margin-top: -10px !important;
+}
+
+.mix_input_phone {
+    margin-left: -20px !important;
+    margin-top: -10px !important;
+}
+
+.mix_input_duration {
+    margin-left: -180px !important;
+    margin-top: -10px !important;
+}
+
+.mix_input_mileage {
+    margin-left: -220px !important;
+    margin-top: -10px !important;
+}
+
+.mix_input_contact {
+    margin-left: -230px !important;
+    margin-top: -10px !important;
+}
+
+.mix_input_time {
+    margin-left: -170px !important;
+    margin-top: -10px !important;
+}
+
+.mix_input_date {
+    margin-left: -170px !important;
+    margin-top: -10px !important;
+}
+
+/* .mix_select_route {
+    margin-left: -170px !important;
+    margin-top: -10px !important;
+} */
+
+.mix_select_call {
+    margin-left: -170px !important;
+    margin-top: -10px !important;
+}
+
+.assits-table table th {
+    text-transform: capitalize !important;
+}
+
+.mix-title-1 {
+    margin-top: -10px !important;
+}
+
+.mix-b {
+    margin-bottom: 50px !important;
+}
+
+.btn-success,
+.alert-success {
+    background-color: #5cb85c !important;
+}
+
+.btn-danger,
+.alert-danger {
+    background-color: #d9534f !important;
+}
+
+.btn-faded {
+    background-color: #f7f7f7 !important;
+}
+
+.btn-warning {
+    background-color: #f0ad4e !important;
+}
+
+.card-head {
+    margin-bottom: 80px !important;
+}
+
+.mix-edit-profile {
+    position: absolute;
+    margin-left: -8px;
+    background-color: #fff;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+}
+
+.mix-sign i {
+    font-size: 5rem;
+    color: #009900;
+}
+
+.mix-text {
+    font-size: 1.1rem;
+}
+
+.user-image img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+textarea {
+    resize: none !important;
+}
+
+.box {
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+.box-title {
+    padding: 5px;
+    font-size: 1.2rem;
+    text-align: center;
+    border-right: 1px solid #ccc;
+}
+
+.box-content {
+    padding: 5px;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.bg-table-danger {
+    background-color: #ffe6e6 !important;
+}
+
+.bg-table-success {
+    background-color: #e6ffe6 !important;
+}
+
+.bg-table-warning {
+    background-color: #fff5e6 !important;
+}
+
+/* .documentDisplay {
+    display: none;
+} */
+
+#hidden_div {
+    display: none;
+}
